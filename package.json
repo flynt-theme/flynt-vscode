@@ -4,14 +4,9 @@
     "description": "Warm tones. Zero visual noise.",
     "version": "0.1.0",
     "publisher": "flynt-theme",
-    "license": "MIT",
+    "author": "Flynt Theme",
     "repository": {
-        "type": "git",
         "url": "https://github.com/flynt-theme/flynt-vscode"
-    },
-    "homepage": "https://flynt-theme.github.io/flynt",
-    "bugs": {
-        "url": "https://github.com/flynt-theme/flynt-vscode/issues"
     },
     "engines": {
         "vscode": "^1.70.0"
@@ -36,13 +31,5 @@
                 "path": "./themes/flynt-light-color-theme.json"
             }
         ]
-    },
-    "scripts": {
-        "build": "strike build theme.json.tmpl --palette ../flynt/palette.json --out themes/",
-        "package": "vsce package",
-        "publish": "vsce publish"
-    },
-    "devDependencies": {
-        "@vscode/vsce": "^3.0.0"
     }
 }

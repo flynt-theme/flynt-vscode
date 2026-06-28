@@ -1,3 +1,5 @@
 **/*.tmpl
-.gitignore
 .git
+.gitignore
+.vscodeignore
+node_modules/**

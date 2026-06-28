@@ -1,0 +1,48 @@
+{
+    "name": "flynt",
+    "displayName": "Flynt",
+    "description": "Warm tones. Zero visual noise.",
+    "version": "0.1.0",
+    "publisher": "flynt-theme",
+    "license": "MIT",
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/flynt-theme/flynt-vscode"
+    },
+    "homepage": "https://flynt-theme.github.io/flynt",
+    "bugs": {
+        "url": "https://github.com/flynt-theme/flynt-vscode/issues"
+    },
+    "engines": {
+        "vscode": "^1.70.0"
+    },
+    "categories": ["Themes"],
+    "keywords": ["theme", "dark", "light", "warm", "minimal"],
+    "icon": "assets/icon.png",
+    "galleryBanner": {
+        "color": "#100E0C",
+        "theme": "dark"
+    },
+    "contributes": {
+        "themes": [
+            {
+                "label": "Flynt Dark",
+                "uiTheme": "vs-dark",
+                "path": "./themes/flynt-dark-color-theme.json"
+            },
+            {
+                "label": "Flynt Light",
+                "uiTheme": "vs",
+                "path": "./themes/flynt-light-color-theme.json"
+            }
+        ]
+    },
+    "scripts": {
+        "build": "strike build theme.json.tmpl --palette ../flynt/palette.json --out themes/",
+        "package": "vsce package",
+        "publish": "vsce publish"
+    },
+    "devDependencies": {
+        "@vscode/vsce": "^3.0.0"
+    }
+}
